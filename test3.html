@@ -1,0 +1,38 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <p id="sol"></p>
+        <script>
+            let obj={
+                name:"kailash",
+                rollno:"5D7",
+                class:"CSE-C"
+            };
+            let username=obj.name;
+            let rollno1=obj.rollno;
+            let c=obj.class;
+            console.log(username);
+            console.log(rollno1);
+            console.log(c);
+            //restructuring
+            let {
+                name: uname,
+                rollno: rno,
+                class: c1,
+                date="today"
+              } = obj;
+              console.log(date);
+            //nested obj
+
+            let obj3={
+                name:"mahesh",
+                details:{
+                    salary:1200,
+                    age:30
+                }
+            }
+            console.log(obj3.details.age);
+        </script>
+    </body>
+</html>

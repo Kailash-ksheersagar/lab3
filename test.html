@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <h4>Enter a number</h4>
+       
+    </head>
+    <body>
+        <input type="number" id="num1">
+        <input type="button" value="submit" onclick="fact()">
+        <p id="sol"></p>
+        <script>
+            const fact=()=>{
+            var a=document.getElementById("num1").value;
+            var i,f=1;
+            for( i=1;i<=a;i++)
+            {
+                f=f*i;
+            }
+            document.getElementById("sol").innerHTML=f;
+            
+        }
+        </script>
+    </body>
+</html>

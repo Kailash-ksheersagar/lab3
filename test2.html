@@ -1,0 +1,42 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <p id="sol"></p>
+        <script>
+            class p1
+            {
+                constructor(user,email,pass)
+                {
+                     this.user1=user;
+                     this.email1=email;
+                     this.password=pass;
+                }
+                 count1()
+                {
+                   console.log( this.user1+ "\n " + this.email1 + this.password);
+                   
+                }
+            }
+            class p2 extends p1
+            {
+                constructor(user,email,pass,p)
+                {
+                    super(user,email,pass);
+                    this.package1=p;
+                }
+                getpackage1()
+                {
+                    console.log(this.user1+this.package1)
+                }
+
+
+            }
+            let data=new p2("kaialash","abc@gmail.com","asjidbasiud","math");
+            data.getpackage1();
+               
+
+            
+        </script>
+    </body>
+</html>
